@@ -42,7 +42,7 @@ This project was just started, so a defined set of features does not yet exist. 
 Install the plugin inside your Serverless Framework project using npm:
 
 ```
-npm install --dev-save serverless-plugin-rust
+npm install --save-dev serverless-plugin-rust
 ```
 
 and then simply add the following line to your projects `serverless.yml` file.
