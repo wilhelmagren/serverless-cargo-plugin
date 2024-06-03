@@ -10,36 +10,52 @@
   following command: `npm install -g serverless@3.38.0`, but note that we (as of writing this) do not know of any potential future security support for the
   Serverless Framework v3.x as 2024 ends. I would recommend to **try and say updated** on the topic if this new commercial licensing affects you and your company.
   
-  
 </div>
 
 
 # serverless-plugin-rust
-> ⚡️ A Serverless Framework plugin for building, testing, and deploying robust and efficient Rust services to AWS Lambda.
+> ⚡️ A Serverless Framework plugin for building, testing, and deploying robust Rust services to AWS Lambda.
 
-This project was clearly inspired by the following existing Serverless Framework plugins:
+This project is inspired by the following existing Serverless Framework plugins:
 * [serverless-rust-plugin](serverless_rust_plugin) 
 * [sls-rust](sls_rust)
 * [serverless-rust](serverless_rust)
 
-and builds upon some of the ideas presented in those plugins. However, most of the Rust plugins for the Serverless Framework seem outdated, and considering that the AWS Lambda community for Rust has started with the [cargo lambda](https://www.cargo-lambda.info/) project, and the awslabs teams is actively developing the new [aws lambda rust runtime](https://github.com/awslabs/aws-lambda-rust-runtime), i stronly believe a more active rust plugin for the Serverless Framework seem like something that is going to be needed for the future of serverless Rust on AWS Lambda.
+and builds upon some of the ideas presented in those plugins. However, most of the Rust plugins for the Serverless Framework seem outdated, and considering that the AWS Lambda community for Rust has started with the [cargo lambda](https://www.cargo-lambda.info/) project, and the awslabs teams is actively developing the new [aws lambda rust runtime](https://github.com/awslabs/aws-lambda-rust-runtime), i strongly believe a more active rust plugin for the Serverless Framework seem like something that is going to be needed for the future of serverless Rust on AWS Lambda.
 
 Therefore, you should see this plugin as a merged fork of all the three above existing plugins; but rewritten as its own plugin.
 
 
 ## ✨ Features
 
-...
+This project was just started, so a defined set of features does not yet exist. However, this plugin **will support most of the features found in the above mentioned plugins**. This Serverless plugin aims to be a drop-in-replacement, unifying the ecosystem for serverless Rust programming.
+
+* Customizable cargo flags per function
+* Optional docker build support
+* Target specific host architecture
+* Cargo lambda support
+* ...
 
 
 ## ⚡️ Quick start
 
-...
+Install the plugin inside your Serverless Framework project using npm:
+
+```
+npm install --dev-save serverless-plugin-rust
+```
+
+and then simply add the following line to your projects `serverless.yml` file.
+
+```yml
+plugins:
+  - serverless-plugin-rust
+```
 
 
 ## ⚠️ License
 
-Copyright (c) 2024 Wilhelm Ågren, serverless-plugin-rust is free and open source software released under the [MIT](repo_license_url) license.
+Copyright (c) 2024 Wilhelm Ågren. The serverless-plugin-rust project is free and open source software released under the [MIT](repo_license_url) license.
 
 
 <!-- README links -->
