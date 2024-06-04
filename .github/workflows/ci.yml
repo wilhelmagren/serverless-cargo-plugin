@@ -5,6 +5,9 @@ on:
     paths:
       - "**.ts"
       - ".node-version"
+  push:
+    branches:
+      - "main"
 
 jobs:
   lint:
