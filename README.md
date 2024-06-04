@@ -8,13 +8,14 @@
   The new pricing model does not apply if you are still using a later version of the Serverless Framework, and note that the Serverless team (as stated above)
   will continue to support v3 throughout 2024 with critical security and bug fixes. Hence, if you want to use the older version, you can install it using the
   following command: `npm install -g serverless@3.38.0`, but note that we (as of writing this) do not know of any potential future security support for the
-  Serverless Framework v3.x as 2024 ends. I would recommend to **try and say updated** on the topic if this new commercial licensing affects you and your company.
+  Serverless Framework v3.x as 2024 ends. I would recommend to **try and say updated** on the topic if this new commercial licensing affects you and your
+  company.
   
 </div>
 
 
 # rust-serverless-plugin
-> ⚡️ A Serverless Framework plugin for building, testing, and deploying robust Rust services to AWS Lambda.
+> ⚡️ A Serverless Framework plugin for building, testing, and deploying Rust services to AWS Lambda.
 
 This project is inspired by the following existing Serverless Framework plugins:
 * [cargo-lambda-serverless][cargo_lambda_serverless_url]
@@ -41,17 +42,17 @@ This project was just started, so a defined set of features does not yet exist. 
 
 ## ⚡️ Quick start
 
-Install the plugin inside your Serverless Framework project using npm:
+Install the plugin inside your serverless project using npm:
 
 ```
-npm install --save-dev rust-serverless-plugin
+npm install --save-dev serverless-cargo-plugin
 ```
 
 and then simply add the following line to your projects `serverless.yml` file.
 
 ```yml
 plugins:
-  - rust-serverless-plugin
+  - serverless-cargo-plugin
 ```
 
 
