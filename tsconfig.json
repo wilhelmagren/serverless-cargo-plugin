@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "rootDir": ".",
-        "outDir": "dist"
+        "outDir": "dist",
+        "strict": true
     },
     "exclude": [
         "node_modules"

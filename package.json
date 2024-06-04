@@ -1,10 +1,11 @@
 {
-  "name": "serverless-plugin-rust",
+  "name": "serverless-cargo-plugin",
   "version": "1.0.0",
   "description": "⚡️ A Serverless Framework plugin for building and deploying Rust services.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "lint": "npx eslint . -c .eslintrc.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -15,7 +16,7 @@
     "serverless": "2.x"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=20.0"
   },
   "license": "MIT"
 }
