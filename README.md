@@ -25,7 +25,7 @@ This project is inspired by the following existing Serverless Framework plugins:
 
 and builds upon some of the ideas presented in those plugins. However, most of the Rust plugins for the Serverless Framework seem outdated, and considering that the AWS Lambda community for Rust has started with the [cargo lambda][cargo_lambda_url] project, and the awslabs teams is actively developing the new [aws lambda rust runtime][aws_lambda_rust_runtime_url], i strongly believe a more active rust plugin for the Serverless Framework seem like something that is going to be needed for the future of serverless Rust on AWS Lambda.
 
-Therefore, you should see this plugin as a merged fork of all the three above existing plugins; but rewritten as its own plugin.
+Therefore, you should see this plugin as a merged fork of all the above existing plugins; but rewritten as its own plugin.
 
 
 ## ✨ Features
@@ -57,7 +57,7 @@ plugins:
 
 ## ⚠️ License
 
-Copyright (c) 2024 Wilhelm Ågren. The rust-serverless-plugin project is free and open source software released under the [MIT](repo_license_url) license.
+Copyright (c) 2024 Wilhelm Ågren. The serverless-cargo-plugin is free and open source software released under the [MIT](repo_license_url) license.
 
 
 <!-- README links -->
@@ -73,4 +73,4 @@ Copyright (c) 2024 Wilhelm Ågren. The rust-serverless-plugin project is free an
 
 <!-- Repository links -->
 
-[repo_license_url]: https://github.com/wilhelmagren/serverless-plugin-rust/blob/main/LICENSE
+[repo_license_url]: https://github.com/wilhelmagren/serverless-cargo-plugin/blob/main/LICENSE
