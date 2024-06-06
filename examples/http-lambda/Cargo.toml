@@ -1,0 +1,16 @@
+[package]
+name = "http-lambda"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Wilhelm Ågren <wilhelmagren98@gmail.com>",
+]
+
+[dependencies]
+lambda_runtime = "0.11.2"
+serde = { version = "1.0.203", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["macros"] }
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

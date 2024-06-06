@@ -1,0 +1,24 @@
+service: http-lambda
+
+provider:
+  name: aws
+  runtime: provided.al2023
+  architecture: arm64
+  memorySize: 128
+
+functions:
+  getHello:
+    handler: main
+    package:
+      artifact: target/lambda/http-lambda/bootstrap.zip
+
+package:
+  individually: true
+
+plugins:
+  - serverless-cargo-plugin
+
+custom:
+  cargo:
+    prebuilt: true
+    workspace: false
