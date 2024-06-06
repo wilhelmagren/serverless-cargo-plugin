@@ -1,0 +1,28 @@
+service: hello-lambda
+
+provider:
+  name: aws
+  runtime: provided.al2023
+  architecture: arm64
+  memorySize: 128
+
+functions:
+  getHelloCat:
+    handler: hello_cat
+    package:
+      artifact: target/lambda/hello-lambda/bootstrap.zip
+  getHelloCow:
+    handler: hello_cow
+    package:
+      artifact: target/lambda/hello-lambda
+
+package:
+  individually: true
+
+plugins:
+  - serverless-cargo-plugin
+
+custom:
+  cargo:
+    prebuilt: true
+    workspace: false

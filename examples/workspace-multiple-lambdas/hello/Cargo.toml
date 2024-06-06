@@ -1,0 +1,18 @@
+[package]
+name = "hello"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_runtime = "0.11.2"
+serde = { version = "1.0.203", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["macros"] }
+
+
+[[bin]]
+name = "hello_cat"
+path = "src/hello_cat.rs"
+
+[[bin]]
+name = "hello_cow"
+path = "src/hello_cow.rs"
