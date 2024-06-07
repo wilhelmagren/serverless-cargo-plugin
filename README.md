@@ -14,7 +14,7 @@
 </div>
 
 
-# rust-serverless-plugin
+# serverless-cargo-plugin
 > ⚡️ A Serverless Framework plugin for building, testing, and deploying Rust services to AWS Lambda.
 
 This project is inspired by the following existing Serverless Framework plugins:
