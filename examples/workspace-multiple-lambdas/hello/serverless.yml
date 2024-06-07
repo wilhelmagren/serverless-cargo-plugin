@@ -10,11 +10,11 @@ functions:
   getHelloCat:
     handler: hello_cat
     package:
-      artifact: target/lambda/hello-lambda/bootstrap.zip
+      artifact: target/lambda/hello-cat/bootstrap.zip
   getHelloCow:
     handler: hello_cow
     package:
-      artifact: target/lambda/hello-lambda
+      artifact: target/lambda/hello-cow/bootstrap.zip
 
 package:
   individually: true
@@ -25,4 +25,4 @@ plugins:
 custom:
   cargo:
     prebuilt: true
-    workspace: false
+    workspace: ../

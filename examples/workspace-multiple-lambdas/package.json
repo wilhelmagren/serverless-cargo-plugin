@@ -1,0 +1,14 @@
+{
+    "name": "workspace-lambdas",
+    "version": "1.0.0",
+    "description": "Workspace example for rust lambdas",
+    "private": true,
+    "workspaces": [
+        "hello",
+        "world"
+    ],
+    "scripts": {
+        "deploy": "npm run deploy --ws",
+        "package": "npm run package --ws"
+    }
+}

@@ -10,9 +10,9 @@ tokio = { version = "1.38.0", features = ["macros"] }
 
 
 [[bin]]
-name = "hello_cat"
+name = "hello-cat"
 path = "src/hello_cat.rs"
 
 [[bin]]
-name = "hello_cow"
+name = "hello-cow"
 path = "src/hello_cow.rs"
