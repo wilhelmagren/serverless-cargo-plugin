@@ -27,7 +27,7 @@
         "url": "https://github.com/wilhelmagren/serverless-cargo-plugin/issues"
     },
     "files": [
-        "index.js",
+        "dist/index.js",
         "package.json",
         "README.md",
         "LICENSE"
