@@ -10,7 +10,7 @@ functions:
   getHello:
     handler: main
     package:
-      artifact: target/lambda/http-lambda/bootstrap.zip
+      artifact: target/lambda/single-http-lambda/bootstrap.zip
 
 package:
   individually: true

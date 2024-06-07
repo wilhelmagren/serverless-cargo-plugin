@@ -1,4 +1,12 @@
 {
+    "name": "hello",
+    "version": "1.0.0",
+    "description": "Simple HTTP GET lambda",
+    "private": true,
+    "scripts": {
+        "deploy": "serverless deploy --config serverless.yml",
+        "package": "serverless package --config serverless.yml"
+    },
     "devDependencies": {
         "serverless": "^3.38.0",
         "serverless-cargo-plugin": "file:../../dist/"

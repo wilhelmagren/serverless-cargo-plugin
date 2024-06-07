@@ -12,5 +12,5 @@ serde = { version = "1.0.203", features = ["derive"] }
 tokio = { version = "1.38.0", features = ["macros"] }
 
 [[bin]]
-name = "main"
+name = "single-http-lambda"
 path = "src/main.rs"
