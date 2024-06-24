@@ -10,7 +10,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "serverless": "3.38.0"
+        "serverless": "4.1.5"
     },
     "devDependencies": {
         "@types/node": "^20.14.1",
